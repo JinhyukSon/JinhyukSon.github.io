@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jinhyuk Son's academic homepage. Interests: geometric and combinatorial group theory, sofic groups, and geometric topology.">
+  <meta name="color-scheme" content="light">
+  <title>Jinhyuk Son | Mathematics</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --text: #1f2933;
+      --muted: #64717d;
+      --line: #e4e8ed;
+      --accent: #285e9b;
+      --paper: #ffffff;
+      --soft: #f3f5f7;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--text);
+      font: 16px/1.75 Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--accent); text-decoration: none; text-underline-offset: 4px; }
+    a:hover { text-decoration: underline; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 2px; }
+    .container { width: min(100% - 48px, 820px); margin: 0 auto; }
+    .sitebar { display: flex; justify-content: space-between; align-items: center; padding: 27px 0; border-bottom: 1px solid var(--line); }
+    .brand { font-size: .91rem; font-weight: 650; letter-spacing: -.02em; color: var(--text); }
+    .sitebar a { font-size: .86rem; color: var(--muted); }
+    .hero { display: grid; grid-template-columns: minmax(0, 1fr) 184px; align-items: center; gap: 44px; padding: 73px 0 63px; border-bottom: 1px solid var(--line); }
+    .eyebrow { color: var(--muted); font-size: .83rem; font-weight: 550; letter-spacing: .075em; text-transform: uppercase; margin: 0 0 12px; }
+    h1 { margin: 0; font-size: clamp(2.5rem, 6vw, 3.65rem); line-height: 1.16; font-weight: 670; letter-spacing: -.055em; }
+    .intro { max-width: 520px; margin: 23px 0 0; color: #465462; font-size: 1.015rem; line-height: 1.85; }
+    .hero-links { display: flex; flex-wrap: wrap; gap: 22px; margin-top: 25px; font-size: .9rem; font-weight: 550; }
+    .portrait-wrap { position: relative; width: 184px; aspect-ratio: 4 / 5; border-radius: 13px; overflow: hidden; background: var(--soft); }
+    .portrait-fallback { position: absolute; inset: 0; display: grid; place-items: center; color: #abb5bf; font-size: 2.8rem; font-weight: 550; letter-spacing: -.065em; user-select: none; }
+    .portrait-wrap img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 22%; opacity: 0; transition: opacity 200ms ease; }
+    .portrait-wrap img.loaded { opacity: 1; }
+    main { padding: 47px 0 73px; }
+    section { display: grid; grid-template-columns: 198px minmax(0, 1fr); gap: 26px; padding: 20px 0 39px; }
+    section + section { border-top: 1px solid var(--line); padding-top: 38px; }
+    h2 { margin: 0; font-size: .98rem; letter-spacing: -.02em; font-weight: 680; }
+    .section-body { color: #3b4854; }
+    .section-body p { margin: 0; }
+    .interest-list { list-style: none; padding: 0; margin: 0; }
+    .interest-list li + li { margin-top: 5px; }
+    .paper-title { font-weight: 660; color: var(--text); }
+    .paper-meta { color: var(--muted); font-size: .91rem; margin-top: 5px !important; }
+    .paper-links { font-size: .9rem; margin-top: 9px !important; }
+    footer { display: flex; justify-content: space-between; padding: 23px 0 43px; border-top: 1px solid var(--line); color: var(--muted); font-size: .81rem; }
+    @media (max-width: 650px) {
+      .container { width: min(100% - 38px, 820px); }
+      .hero { grid-template-columns: minmax(0,1fr) 118px; gap: 17px; padding: 52px 0 46px; }
+      .portrait-wrap { width: 118px; border-radius: 9px; }
+      .portrait-fallback { font-size: 2rem; }
+      h1 { font-size: clamp(2.15rem, 8vw, 3rem); }
+      .intro { font-size: .95rem; margin-top: 16px; }
+      .hero-links { gap: 15px; }
+      section { grid-template-columns: 1fr; gap: 10px; padding-bottom: 31px; }
+      section + section { padding-top: 31px; }
+      main { padding-top: 25px; padding-bottom: 40px; }
+    }
+    @media (max-width: 390px) {
+      .hero { grid-template-columns: 1fr 94px; }
+      .portrait-wrap { width: 94px; }
+      h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="sitebar">
+      <span class="brand">Jinhyuk Son</span>
+      <a href="https://github.com/JinhyukSon" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+    </div>
+
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Mathematics</p>
+        <h1>Jinhyuk Son</h1>
+        <p class="intro">Interested in structural and geometric questions in group theory and topology.</p>
+        <nav class="hero-links" aria-label="Page sections">
+          <a href="#research">Research interests ↓</a>
+          <a href="#papers">Papers &amp; preprints ↓</a>
+        </nav>
+      </div>
+      <div class="portrait-wrap" aria-label="Profile photo area">
+        <div class="portrait-fallback" aria-hidden="true">JS</div>
+        <!-- Upload your new portrait to this repository as profile.jpg. -->
+        <img src="profile.jpg" alt="Portrait of Jinhyuk Son" onload="this.classList.add('loaded')" onerror="this.remove()">
+      </div>
+    </header>
+
+    <main>
+      <section id="research" aria-labelledby="research-heading">
+        <h2 id="research-heading">Research interests</h2>
+        <div class="section-body">
+          <ul class="interest-list">
+            <li>Geometric and combinatorial group theory</li>
+            <li>Sofic groups</li>
+            <li>Geometric topology</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="papers" aria-labelledby="papers-heading">
+        <h2 id="papers-heading">Papers &amp; preprints</h2>
+        <div class="section-body">
+          <article>
+            <div class="paper-title">Soficity of One-Relator Groups</div>
+            <p class="paper-meta">Jinhyuk Son · Preprint</p>
+            <p class="paper-links"><a href="https://arxiv.org/abs/2610.02213" target="_blank" rel="noopener noreferrer">arXiv ↗</a></p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>Jinhyuk Son</span>
+      <span>Mathematics</span>
+    </footer>
+  </div>
+</body>
+</html>
